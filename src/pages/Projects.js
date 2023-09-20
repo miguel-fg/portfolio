@@ -10,6 +10,7 @@ import data from "../projects.json";
 //react svg icons
 import WebIcon from "../components/icons/WebIcon";
 import RobotIcon from "../components/icons/RobotIcon";
+import GithubIcon from "../components/icons/GithubIcon";
 
 const Projects = () => {
 
@@ -17,8 +18,8 @@ const Projects = () => {
         <Accordion.Item eventKey={project.id} key={uuid()} className="acc-item">
             <Accordion.Header className="acc-header">
                 <Stack direction="horizontal" gap={3}>
-                    {project.category === "web" ? <WebIcon /> : project.category === "robotics" ? <RobotIcon /> : <></>}
-                    {project.name}
+                    {project.category === "web" ? <WebIcon width="1.5em" height="1.5em" className="project-icon" /> : project.category === "robotics" ? <RobotIcon width="1.5em" height="1.5em" className="project-icon" /> : <></>}
+                    <span className="project-title">{project.name}</span>
                 </Stack>
             </Accordion.Header>
             <Accordion.Body className="acc-body">
@@ -30,6 +31,9 @@ const Projects = () => {
                     ))}
                 <p className="project-description">{project.description}</p>
                 <p className="project-date">{project.date}</p>
+                <a href={project.github_link} target="_blank" rel="noreferrer" className="github-anchor">
+                    <GithubIcon stroke="var(--gunmetal)" strokeWidth={2} className="github-icon-project" /> Github
+                </a>
             </Accordion.Body>
         </Accordion.Item>
     ))
