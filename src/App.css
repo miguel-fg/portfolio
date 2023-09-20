@@ -1,38 +1,374 @@
-.App {
-  text-align: center;
+/* fonts and variables */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Grotesk&display=swap');
+
+:root{
+  --gunmetal: #222D3B;
+  --dim-gray: #646F74;
+  --white-smoke: #F5F5F5;
+  --red-crayola: #F12F4E;
+  --celestial-blue: #2892d7;
+  --jungle-green: #21A179;
+  --xanthous: #EDB230;
+
+  --header-font: 'Inconsolata', monospace;
+  --body-font: 'Space Grotesk', sans-serif; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* global styles */
+body {
+    scrollbar-width: none;
+    background-color: var(--gunmetal) !important;
+    font-family: var(--body-font) !important;
+    color: var(--white-smoke) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body::-webkit-scrollbar{
+    display: none;
   }
+
+/* navbar styles */
+.nav-bar {
+  background-color: var(--gunmetal);
+  border-bottom: 1px solid var(--dim-gray);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-icon {
+  color: var(--red-crayola);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-text{
+    font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-text:hover{
+  color: var(--red-crayola);
+}
+
+.miguel-fierro{
+    margin-left: 0.5em;
+    font-weight: bold;
+}
+
+.nav-title-link {
+    margin-left: 2%;
+}
+
+.nav-link {
+    margin-right: 2%;
+}
+
+/* homepage styles */
+.main-title{
+  font-family: var(--header-font);
+}
+
+.main-container{
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.info {
+    font-size: x-large;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: justify;
+}
+
+.social-links {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.social-icon {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.github-icon {
+  color: var(--red-crayola);
+}
+
+/* animation */
+@keyframes typing {
+    0%{content: "";}
+    5%{content: "I";}
+    15%{content: "I'";}
+    25%{content: "I'M";}
+    35%{content: "I'M ";}
+    45%{content: "I'M M";}
+    55%{content: "I'M MI";}
+    65%{content: "I'M MIG";}
+    75%{content: "I'M MIGU";}
+    85%{content: "I'M MIGUE";}
+    95%{content: "I'M MIGUEL";}
+    }
+    
+    @keyframes blink {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0;}
+    }
+    
+    .typewriter {
+      --caret: var(--dim-gray);
+      color: var(--red-crayola);
+    }
+    
+    .typewriter::before {
+      content: "I'M MIGUEL";
+      animation: typing 2.5s linear;
+    }
+    
+    .typewriter::after {
+      content: "";
+      border-right: 1ch solid var(--caret);
+      animation: blink 0.75s linear infinite;
+    }
+    
+    @media (prefers-reduced-motion) {
+      .typewriter::after {
+        animation: none;
+      }
+    }
+
+/* about me page */
+
+.file-download {
+  color: var(--celestial-blue);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: xx-large;
+  margin-left: 0.5em;
+  color: var(--red-crayola);
+}
+
+.section-container {
+  background-color: var(--gunmetal);
+  border: 1px solid var(--dim-gray);
+  padding: 1em 1em 1em 0em;
+}
+
+.resume-item-title {
+  font-size: x-large;
+}
+
+.year{
+  margin-right: 10px;
+}
+
+.extra-info {
+  font-size: larger;
+  font-weight: 600;
+  color: var(--dim-gray);
+  margin-bottom: 50px;
+}
+
+/* animation */
+@keyframes typing2 {
+  0%{content: "";}
+  10%{content: "A";}
+  20%{content: "AB";}
+  30%{content: "ABO";}
+  40%{content: "ABOU";}
+  50%{content: "ABOUT";}
+  60%{content: "ABOUT ";}
+  70%{content: "ABOUT M";}
+  80%{content: "ABOUT ME";}
   }
-  to {
-    transform: rotate(360deg);
+
+  @keyframes blink2 {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0;}
+    }
+    
+    .typewriter2 {
+      --caret: var(--dim-gray);
+    }
+
+  .typewriter2::before {
+    content: "ABOUT ME";
+    animation: typing2 2.5s linear;
+  }
+  
+  .typewriter2::after {
+    content: "";
+    border-right: 1ch solid var(--caret);
+    animation: blink 0.75s linear infinite;
+  }
+  
+  @media (prefers-reduced-motion) {
+    .typewriter2::after {
+      animation: none;
+    }
+  }
+/* projects page */
+.accordion {
+  color: var(--white-smoke);
+  margin-top: 5%;
+}
+
+.accordion-item {
+  background-color: var(--gunmetal) !important;
+}
+
+.accordion-header {
+  --bs-accordion-active-bg: var(--red-crayola);
+  --bs-accordion-active-color: var(--white-smoke);
+}
+
+.accordion button:focus {
+  box-shadow: inset 0px 0px 2px 2px var(--red-crayola) !important;
+}
+
+.skill-tag{
+  margin-right: 1em;
+  display: inline-flex;
+  padding: 0.25em;
+  width: fit-content;
+  color: var(--dim-gray);
+  border: 1px solid var(--dim-gray);
+  border-radius: 7px;
+  margin-bottom: 1em;
+}
+
+.status {
+  width: fit-content;
+  padding: 0.25em;
+  color: var(--gunmetal);
+  font-weight: bolder;
+  border-radius: 7px;
+  margin-bottom: 1em;
+}
+
+.completed{
+  background-color: var(--jungle-green);
+}
+
+.in-progress {
+  background-color: var(--xanthous);
+}
+
+.project-date {
+  color: var(--dim-gray);
+}
+
+.project-description {
+  text-align: justify;
+  font-size: larger;
+}
+
+/* animation */
+@keyframes typing3 {
+  0%{content: "";}
+  10%{content: "P";}
+  20%{content: "PR";}
+  30%{content: "PRO";}
+  40%{content: "PROJ";}
+  50%{content: "PROJE";}
+  60%{content: "PROJEC";}
+  70%{content: "PROJECT";}
+  80%{content: "PROJECTS";}
+  }
+
+  @keyframes blink3 {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0;}
+    }
+    
+    .typewriter3 {
+      --caret: currentcolor;
+    }
+
+  .typewriter3::before {
+    content: "PROJECTS";
+    animation: typing3 2.5s linear;
+  }
+  
+  .typewriter3::after {
+    content: "";
+    border-right: 1ch solid var(--caret);
+    animation: blink 0.75s linear infinite;
+  }
+  
+  @media (prefers-reduced-motion) {
+    .typewriter3::after {
+      animation: none;
+    }
+  }
+
+/* contact page */
+.contact-form {
+  margin-top: 5%;
+}
+
+.form-input {
+  font-size: large;
+  background-color: var(--gunmetal) !important;
+}
+
+.contact-info {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.bottom-info {
+  margin-bottom: 5%;
+}
+
+.email-toast {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+/* animation */
+@keyframes typing4 {
+  0%{content: "";}
+  10%{content: "C";}
+  20%{content: "CO";}
+  30%{content: "CON";}
+  40%{content: "CONT";}
+  50%{content: "CONTA";}
+  60%{content: "CONTAC";}
+  70%{content: "CONTACT";}
+  80%{content: "CONTACT ";}
+  90%{content: "CONTACT M";}
+  100%{content: "CONTACT ME";}
+  }
+
+  @keyframes blink4 {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0;}
+    }
+    
+    .typewriter4 {
+      --caret: var(--dim-gray);
+    }
+
+  .typewriter4::before {
+    content: "CONTACT ME";
+    animation: typing4 2.5s linear;
+  }
+  
+  .typewriter4::after {
+    content: "";
+    border-right: 1ch solid var(--caret);
+    animation: blink4 0.75s linear infinite;
+  }
+  
+  @media (prefers-reduced-motion) {
+    .typewriter4::after {
+      animation: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  .main-container{
+    width: 90%;
   }
 }
