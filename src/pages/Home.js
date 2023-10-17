@@ -18,14 +18,13 @@ const Home = () => {
             </div>
             <div>
                 <p className="info">
-                    I'm a Computer Science student based in Vancouver, eager to
-                    make a mark in the industry.
+                    I'm a Computer Science student and full-stack developer based in Vancouver.
                     <br />
                     <br />
                     Throughout my studies, I have gained valuable insights into
                     various programming languages and frameworks. With practical
                     experience under my belt, I bring a solid foundation in
-                    problem-solving and software development.
+                    problem-solving and web development.
                     <br />
                     <br />
                     As a dedicated problem solver, I thrive on tackling
@@ -34,9 +33,9 @@ const Home = () => {
                     latest advancements in the field.
                     <br />
                     <br />
-                    From web development to Java minigames, my portfolio
+                    From engineering prototypes to MERN stack apps, my portfolio
                     features a range of projects that demonstrate my ability to
-                    create robust software applications.
+                    create robust systems.
                 </p>
             </div>
             <Stack direction="horizontal" gap={3} className="social-links">

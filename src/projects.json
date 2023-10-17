@@ -6,7 +6,7 @@
     "category": "web",
     "github_link": "https://github.com/miguel-fg/cash-flow-frontend",
     "stack": ["React", "MongoDB", "ExpressJS", "NodeJS"],
-    "description": "Cash Flow provides a way to track personal expenses in a user-friendly way. It is built using the MERN Stack, with React Bootstrap and Recharts incorporated into the user interface.\nThe app is currently in development with plans of adding user authentication and saving goals."
+    "description": "Cash Flow provides a way to track personal expenses in a user-friendly way. It is built using the MERN Stack, with React Bootstrap and Recharts incorporated into the user interface.\nThe app is currently in development with recently added user features using Json Web Tokens!. I'll revamp the dashboard and add budgets and saving goals soon. Website coming soon!"
 }, {
     "id": "1",
     "name": "Raspberry Pi - Braille printer",
@@ -16,4 +16,13 @@
     "github_link": "https://github.com/miguel-fg/braille-printer",
     "stack": ["Raspberry Pi", "Python", "OCR", "OpenCV"],
     "description": "This project aims to create a Braille printer using a Raspberry Pi, a camera, OpenCV, and Tesseract. The printer captures a snapshot of text, extracts the characters using optical character recognition (OCR), and translates each character into movement instructions for three motors. These motors generate a strip of paper with corresponding Braille tactile bumps."
+},{
+    "id": "2",
+    "name": "Python TKinter - PDF manager",
+    "date": "November 2022",
+    "status": "Completed",
+    "category": "app",
+    "github_link": "https://github.com/miguel-fg/PDF-utils",
+    "stack": ["TKinter", "Python", "UI/UX"],
+    "description": "The PDF tools application is a Python Tkinter-based desktop application that allows you to merge, split, and compress PDF files. It provides a simple and intuitive user interface and utilizes the Bootstrap Tkinter library for enhanced styling. The application uses the PyPDF2 and PyMuPDF libraries for PDF file handling."
 }]

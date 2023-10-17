@@ -92,12 +92,12 @@ const About = () => {
             </div>
             <SectionBreak
                 text="WORK EXPERIENCE"
-                icon={<BriefcaseIcon width="35" height="35" />}
+                icon={<BriefcaseIcon width="35" height="35" className="break-icon" />}
             />
             {workItems}
             <SectionBreak
                 text="EDUCATION"
-                icon={<PencilIcon width="35" height="35" />}
+                icon={<PencilIcon width="35" height="35" className="break-icon" />}
             />
             {eduItems}
         </Stack>

@@ -1,5 +1,5 @@
 /* fonts and variables */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Sen&display=swap');
 
 :root{
   --gunmetal: #222D3B;
@@ -11,7 +11,7 @@
   --xanthous: #EDB230;
 
   --header-font: 'Inconsolata', monospace;
-  --body-font: 'Space Grotesk', sans-serif; 
+  --body-font: 'Sen', sans-serif; 
 }
 
 /* global styles */
@@ -34,6 +34,7 @@ body::-webkit-scrollbar{
 
 .home-icon {
   color: var(--red-crayola);
+  margin-bottom: 0.2em;
 }
 
 .navbar-text{
@@ -148,6 +149,10 @@ body::-webkit-scrollbar{
   color: var(--red-crayola);
 }
 
+.break-icon {
+  margin-bottom: 0.35em;
+}
+
 .section-container {
   background-color: var(--gunmetal);
   border: 1px solid var(--dim-gray);
@@ -207,6 +212,7 @@ body::-webkit-scrollbar{
       animation: none;
     }
   }
+
 /* projects page */
 .accordion {
   color: var(--white-smoke);
@@ -400,5 +406,13 @@ body::-webkit-scrollbar{
 @media screen and (max-width: 991px) {
   .main-container{
     width: 90%;
+  }
+
+  .main-title{
+    font-size: 2.5em;
+  }
+
+  .project-title{
+    font-size: larger;
   }
 }
