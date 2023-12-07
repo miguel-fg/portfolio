@@ -7,8 +7,17 @@
     "github_link": "https://github.com/miguel-fg/cash-flow-frontend",
     "stack": ["React", "MongoDB", "ExpressJS", "NodeJS"],
     "description": "Cash Flow provides a way to track personal expenses in a user-friendly way. It is built using the MERN Stack, with React Bootstrap and Recharts incorporated into the user interface.\nThe app is currently in development with recently added user features using Json Web Tokens!. I'll revamp the dashboard and add budgets and saving goals soon. Website coming soon!"
-}, {
+},{
     "id": "1",
+    "name": "Interactive Web Canvas",
+    "date": "November 2023",
+    "status": "In progress",
+    "category": "web",
+    "github_link": "https://github.com/miguel-fg/open-canvas",
+    "stack": ["HTML", "JavaScript", "PHP", "MySQL"],
+    "description": "Open Canvas is an interactive web canvas built entirely with HTML, CSS, and JavaScript. It provides the basic tools you would expect from a drawing application, and the ability for a user to create, save, edit, and delete projects. The drawings are saved as .png files on the server and the path to the files is stored in a MySQL database. Currently adding more tools."
+},{
+    "id": "2",
     "name": "Raspberry Pi - Braille printer",
     "date": "November 2019",
     "status": "Completed",
@@ -17,7 +26,16 @@
     "stack": ["Raspberry Pi", "Python", "OCR", "OpenCV"],
     "description": "This project aims to create a Braille printer using a Raspberry Pi, a camera, OpenCV, and Tesseract. The printer captures a snapshot of text, extracts the characters using optical character recognition (OCR), and translates each character into movement instructions for three motors. These motors generate a strip of paper with corresponding Braille tactile bumps."
 },{
-    "id": "2",
+    "id": "3",
+    "name": "Anonymous wish-sharing app",
+    "date": "October 2023",
+    "status": "Completed",
+    "category": "web",
+    "github_link": "https://github.com/makih2003/fresh-start",
+    "stack": ["React", "MongoDB", "ExpressJS", "NodeJS"],
+    "description": "Fresh Start is a simple MERN Stack application designed for users to anonymously share their dreams, goals, and aspirations. The main text input uses an NPM library called 'bad-words' to prevent submitting profanity. Once the user writes their input, an animated wall of text will appear with all the previous submissions in different colours, and the new submission will appear as the first one."
+},{
+    "id": "4",
     "name": "Python TKinter - PDF manager",
     "date": "November 2022",
     "status": "Completed",
